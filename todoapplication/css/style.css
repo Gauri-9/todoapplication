@@ -1,0 +1,52 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f1daf2, #edf4f7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container.task-manager {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    font-weight: 500;
+    color: #343a40;
+}
+
+input.form-control {
+    border-radius: 10px;
+    height: 45px;
+}
+
+button.btn {
+    border-radius: 10px;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+/* For better mobile view */
+@media (max-width: 600px) {
+    .container.task-manager {
+        padding: 20px;
+    }
+
+    input.form-control {
+        margin-bottom: 10px;
+    }
+}

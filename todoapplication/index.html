@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container task-manager mt-5 p-4 rounded shadow-lg">
+        <h1 class="text-center">Task Manager</h1>
+
+        <!-- Input Section -->
+        <div class="task-input mt-4">
+            <div class="input-group">
+                <input type="text" id="task" class="form-control" placeholder="Enter your task">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="addTask()">Add Task</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display tasks -->
+        <div class="task-list mt-4">
+            <h2 class="text-center">To-Do List</h2>
+            <ul id="todoList" class="list-group"></ul>
+        </div>
+
+        <!-- Delete Task by Index -->
+        <div class="task-delete-index mt-4">
+            <div class="input-group">
+                <input type="number" id="deleteIndex" class="form-control" placeholder="Enter index to delete">
+                <div class="input-group-append">
+                    <button class="btn btn-danger" onclick="deleteTaskByIndex()">Delete by Index</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Task by Task Name -->
+        <div class="task-delete-element mt-3">
+            <div class="input-group">
+                <input type="text" id="deleteTask" class="form-control" placeholder="Enter task to delete">
+                <div class="input-group-append">
+                    <button class="btn btn-danger" onclick="deleteTaskByName()">Delete by Task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
